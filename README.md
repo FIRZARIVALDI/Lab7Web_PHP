@@ -78,14 +78,6 @@ Halaman menampilkan judul "Belajar PHP", tulisan "PHP berhasil dijalankan", dan 
 **Penjelasan:**
 Data: Tugas 85, UTS 78, UAS 90. Nilai akhir = (85 × 0,30) + (78 × 0,30) + (90 × 0,40) = **84,90**. Karena nilai ≥ 75 dan < 85, predikatnya **B**.
 
-📸 **Screenshot 2 (nilai diubah):** `screenshots/latihan2_b.png`
-
-![Latihan 2 nilai diubah](screenshots/latihan2_b.png)
-
-**Penjelasan:**
-(Isi dengan nilai yang Anda ubah, misalnya Tugas 90, UTS 90, UAS 90 → nilai akhir 90,00 → predikat A. Jelaskan bahwa percabangan `if/elseif/else` memilih predikat sesuai rentang nilai.)
-
----
 
 ### Latihan 3 - Perulangan dan Array
 **File:** `latihan3.php`
