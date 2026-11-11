@@ -57,7 +57,9 @@ Lab7Web_PHP/
 
 📸 **Screenshot:** `screenshots/latihan1.png`
 
-![Latihan 1](screenshots/latihan1.png)
+![Latihan 1]
+<img width="332" height="328" alt="image" src="https://github.com/user-attachments/assets/d6d3c428-4437-468d-b3b6-ad277861eb22" />
+
 
 **Penjelasan:**
 Halaman menampilkan judul "Belajar PHP", tulisan "PHP berhasil dijalankan", dan waktu server dari fungsi `date()`. Kode PHP tidak tampil sebagai teks di browser, hanya hasil `echo` yang tampil. Ini membuktikan PHP dieksekusi di server dan browser hanya menerima output HTML. Waktu akan berubah setiap halaman di-refresh.
@@ -69,7 +71,9 @@ Halaman menampilkan judul "Belajar PHP", tulisan "PHP berhasil dijalankan", dan 
 
 📸 **Screenshot 1 (data bawaan):** `screenshots/latihan2_a.png`
 
-![Latihan 2 data bawaan](screenshots/latihan2_a.png)
+![Latihan 2 data bawaan]
+<img width="800" height="315" alt="image" src="https://github.com/user-attachments/assets/16555bf9-3d03-4ac9-923a-c9cacc4d7237" />
+
 
 **Penjelasan:**
 Data: Tugas 85, UTS 78, UAS 90. Nilai akhir = (85 × 0,30) + (78 × 0,30) + (90 × 0,40) = **84,90**. Karena nilai ≥ 75 dan < 85, predikatnya **B**.
@@ -88,7 +92,9 @@ Data: Tugas 85, UTS 78, UAS 90. Nilai akhir = (85 × 0,30) + (78 × 0,30) + (90 
 
 📸 **Screenshot:** `screenshots/latihan3.png`
 
-![Latihan 3](screenshots/latihan3.png)
+![Latihan 3]
+<img width="703" height="310" alt="image" src="https://github.com/user-attachments/assets/74d27a9b-a32d-43c8-ba63-cf4c05202566" />
+
 
 **Penjelasan:**
 Array `$mahasiswa` berisi 7 nama (4 nama awal dan 3 nama tambahan: Eka, Fajar, Gita). Perulangan `foreach` menampilkan tiap nama sebagai item `<li>` pada daftar bernomor `<ol>`. Setiap nama diamankan dengan `htmlspecialchars()`.
@@ -100,7 +106,9 @@ Array `$mahasiswa` berisi 7 nama (4 nama awal dan 3 nama tambahan: Eka, Fajar, G
 
 📸 **Screenshot:** `screenshots/latihan4.png`
 
-![Latihan 4](screenshots/latihan4.png)
+![Latihan 4]
+<img width="409" height="232" alt="image" src="https://github.com/user-attachments/assets/e2b7f862-ac08-49b0-8130-882de021955d" />
+
 
 **Penjelasan:**
 - `hitungDiskon(150000, 10)` menghasilkan **Rp135.000** (potongan 10% = Rp15.000).
