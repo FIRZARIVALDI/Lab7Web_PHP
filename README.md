@@ -2,9 +2,9 @@
 
 | | |
 |---|---|
-| **Nama** | (isi nama) |
-| **NIM** | (isi NIM) |
-| **Kelas** | (isi kelas) |
+| **Nama** | (M.FIRZA RIVALDI) |
+| **NIM** | (312510082) |
+| **Kelas** | (TI 25 1 A) |
 | **Mata Kuliah** | Pemrograman Web |
 | **Topik** | Pemrograman server-side dengan PHP |
 
@@ -124,14 +124,16 @@ Function membuat kode bisa dipakai ulang dengan nilai berbeda tanpa menulis ulan
 
 📸 **Screenshot 1 (sebelum submit):** `screenshots/latihan5_a.png`
 
-![Latihan 5 sebelum submit](screenshots/latihan5_a.png)
+![Latihan 5 sebelum submit]<img width="662" height="322" alt="Screenshot 2026-11-11 192954" src="https://github.com/user-attachments/assets/8fd49af4-394b-4763-a281-a436d3c482ed" />
+
 
 **Penjelasan:**
 Tampilan awal form pencarian dengan satu kolom "Kata kunci" dan tombol Cari. URL masih `.../latihan5.php` tanpa parameter.
 
 📸 **Screenshot 2 (setelah submit, tampilkan URL di address bar):** `screenshots/latihan5_b.png`
 
-![Latihan 5 setelah submit](screenshots/latihan5_b.png)
+![Latihan 5 setelah submit]<img width="637" height="355" alt="Screenshot 2026-11-11 193037" src="https://github.com/user-attachments/assets/b5567ae1-fddf-468b-9edd-0ba00eb39fe1" />
+
 
 **Penjelasan:**
 Setelah mengisi kata kunci (misalnya `php`) dan menekan Cari, URL berubah menjadi `...latihan5.php?kata=php`. Ini ciri metode GET: data dikirim lewat parameter URL sehingga terlihat. Karena itu GET tidak boleh dipakai untuk kata sandi atau data sensitif.
@@ -143,21 +145,24 @@ Setelah mengisi kata kunci (misalnya `php`) dan menekan Cari, URL berubah menjad
 
 📸 **Screenshot 1 (data lengkap):** `screenshots/latihan6_a.png`
 
-![Latihan 6 data lengkap](screenshots/latihan6_a.png)
+![Latihan 6 data lengkap]<img width="488" height="322" alt="Screenshot 2026-11-11 193329" src="https://github.com/user-attachments/assets/b4c7ec1c-dd38-4cfd-892f-26aee453bd85" />
+
 
 **Penjelasan:**
 Nama dan Program Studi diisi lengkap, lalu muncul "Data diterima" beserta data yang diinput. URL tidak berubah karena metode POST mengirim data lewat body request.
 
 📸 **Screenshot 2 (input berisi tag HTML/tanda kutip, misalnya `<b>Andi</b>` dan `"TI"`):** `screenshots/latihan6_b.png`
 
-![Latihan 6 uji karakter khusus](screenshots/latihan6_b.png)
+![Latihan 6 uji karakter khusus]<img width="481" height="321" alt="Screenshot 2026-11-11 193300" src="https://github.com/user-attachments/assets/4e46479d-9dc6-4057-bddc-061ca26d5286" />
+
 
 **Penjelasan:**
 Tag HTML tampil apa adanya sebagai teks (tidak menjadi huruf tebal). Ini karena `htmlspecialchars()` mengubah karakter khusus menjadi entitas HTML sehingga aman dari injeksi HTML/script (XSS).
 
 📸 **Screenshot 3 (input kosong / spasi saja):** `screenshots/latihan6_c.png`
 
-![Latihan 6 input kosong](screenshots/latihan6_c.png)
+![Latihan 6 input kosong]<img width="425" height="224" alt="Screenshot 2026-11-11 193417" src="https://github.com/user-attachments/assets/d3a07c94-151a-4a8b-a81c-a3db126dd674" />
+
 
 **Penjelasan:**
 Jika kolom kosong atau hanya spasi, `trim()` membuatnya menjadi string kosong dan muncul pesan "Semua kolom wajib diisi." Validasi PHP tetap bekerja walaupun atribut `required` di HTML dilewati. (Untuk menguji, hapus atribut `required` sementara lewat Inspect Element, atau isi kolom dengan spasi saja.)
@@ -169,21 +174,25 @@ Jika kolom kosong atau hanya spasi, `trim()` membuatnya menjadi string kosong da
 
 📸 **Screenshot 1 (input valid, misalnya Buku, 12500, 3):** `screenshots/latihan7_a.png`
 
-![Latihan 7 valid](screenshots/latihan7_a.png)
+![Latihan 7 valid]<img width="763" height="337" alt="image" src="https://github.com/user-attachments/assets/95476cb2-91bb-4856-b463-301af59e80ba" />
+
 
 **Penjelasan:**
 Subtotal = harga × jumlah = 12.500 × 3 = **Rp37.500**. PHP memvalidasi input, mengubah tipe data (`float` dan `int`), lalu menghitung dan memformat dengan `number_format()`.
 
 📸 **Screenshot 2 (harga desimal, misalnya 2500.50 × 2):** `screenshots/latihan7_b.png`
 
-![Latihan 7 desimal](screenshots/latihan7_b.png)
+![Latihan 7 desimal]<img width="820" height="338" alt="image" src="https://github.com/user-attachments/assets/9c234285-c1bb-4b91-b3e4-bb3ac50ba29b" />
+
 
 **Penjelasan:**
 Harga desimal diterima karena `is_numeric()` bernilai benar. Subtotal 5001 tampil sebagai **Rp5.001**.
 
 📸 **Screenshot 3 (jumlah 0 atau negatif, misalnya 0 atau -2):** `screenshots/latihan7_c.png`
 
-![Latihan 7 tidak valid](screenshots/latihan7_c.png)
+![Latihan 7 tidak valid]
+<img width="714" height="237" alt="image" src="https://github.com/user-attachments/assets/30695606-b210-4700-b81e-ff6c8fbee27c" />
+
 
 **Penjelasan:**
 Muncul pesan "Periksa kembali nama barang, harga, dan jumlah." Jumlah 0 atau negatif ditolak oleh pemeriksaan `ctype_digit()` dan `(int)$jumlahInput < 1`. Validasi HTML (`min="1"`) hanya membantu pengguna, sedangkan validasi PHP adalah pemeriksaan utama.
@@ -197,21 +206,26 @@ Fitur: form berisi nama, NIM, program studi, semester, dan email; metode POST; v
 
 📸 **Screenshot 1 (tampilan awal form):** `screenshots/mini_project_form.png`
 
-![Mini project form](screenshots/mini_project_form.png)
+![Mini project form]<img width="512" height="496" alt="image" src="https://github.com/user-attachments/assets/2144ad96-4b7b-4766-8823-302ad8eb66db" />
+
+
 
 **Penjelasan:**
 Tampilan awal form dengan lima kolom: Nama, NIM, Program Studi, Semester, dan Email.
 
 📸 **Screenshot 2 (input valid):** `screenshots/mini_project_valid.png`
 
-![Mini project valid](screenshots/mini_project_valid.png)
+![Mini project valid]<img width="492" height="474" alt="Screenshot 2026-11-11 194415" src="https://github.com/user-attachments/assets/72ac4192-5180-4a67-9c80-913a8e2e7b6e" />
+<img width="491" height="767" alt="Screenshot 2026-11-11 194434" src="https://github.com/user-attachments/assets/800e59ae-7776-43f3-9373-f66d60fd4e72" />
+
 
 **Penjelasan:**
 Semua data memenuhi aturan validasi, sehingga ringkasan data mahasiswa tampil dalam tabel.
 
 📸 **Screenshot 3 (input tidak valid):** `screenshots/mini_project_error.png`
 
-![Mini project error](screenshots/mini_project_error.png)
+![Mini project error]<img width="506" height="470" alt="image" src="https://github.com/user-attachments/assets/1959fee0-2db6-4f5a-b76b-903ee9f4fb75" />
+
 
 **Penjelasan:**
 Seluruh pesan kesalahan ditampilkan sekaligus dalam bentuk daftar. Data yang sudah diisi tidak hilang dari form.
@@ -239,21 +253,25 @@ Seluruh pesan kesalahan ditampilkan sekaligus dalam bentuk daftar. Data yang sud
 
 📸 **Screenshot 1 (seluruh halaman, bagian rata-rata dan format Rupiah):** `screenshots/eksperimen_a.png`
 
-![Eksperimen rata-rata dan Rupiah](screenshots/eksperimen_a.png)
+![Eksperimen rata-rata dan Rupiah]<img width="1206" height="741" alt="image" src="https://github.com/user-attachments/assets/f1ad094f-657b-43c9-b547-33f626ad665b" />
+
 
 **Penjelasan:**
 Eksperimen 1: function `hitungRataRata()` menghitung rata-rata tiga nilai (85, 78, 90 = 84,33). Eksperimen 3: function `formatRupiah()` mengubah angka menjadi format Rupiah, misalnya `1500000` menjadi `Rp1.500.000`.
 
 📸 **Screenshot 2 (hasil pencarian nama, misalnya kata kunci `a`):** `screenshots/eksperimen_b.png`
 
-![Eksperimen pencarian GET](screenshots/eksperimen_b.png)
+![Eksperimen pencarian GET]<img width="423" height="256" alt="image" src="https://github.com/user-attachments/assets/b668a838-54cb-4dc0-9ee0-007d934bfefe" />
+<img width="399" height="151" alt="image" src="https://github.com/user-attachments/assets/533a35f2-4001-48ba-93f9-2276767dbd0f" />
+
 
 **Penjelasan:**
 Eksperimen 2: pencarian GET pada array nama memakai `stripos()` (tidak membedakan huruf besar/kecil). Nama yang mengandung kata kunci ditampilkan, dan jika tidak ada muncul "Tidak ditemukan."
 
 📸 **Screenshot 3 (validasi NIM di mini project, misalnya NIM `ABC123`):** `screenshots/eksperimen_c.png`
 
-![Eksperimen validasi NIM](screenshots/eksperimen_c.png)
+![Eksperimen validasi NIM]<img width="249" height="78" alt="image" src="https://github.com/user-attachments/assets/91d99da5-ca0f-4a7a-a4b6-cc8747bc132b" />
+
 
 **Penjelasan:**
 Eksperimen 4: NIM hanya boleh berisi angka dengan panjang 8-12 digit (ditetapkan sendiri). Selain itu ditolak dengan pesan kesalahan.
